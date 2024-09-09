@@ -48,14 +48,16 @@ Before you begin, ensure you have met the following requirements:
 
 To run the server in development mode:
 
+```
 npm run dev
-
+```
 
 To build and run the server in production mode:
 
+```
 npm run build
 npm start
-
+```
 
 The server will start on the port specified in your `.env` file (default is 3001).
 
