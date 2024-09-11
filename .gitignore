@@ -5,3 +5,4 @@ eb-venv/
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+!.elasticbeanstalk/golf-getaways-api-dev.env.yml
