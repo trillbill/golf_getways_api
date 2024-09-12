@@ -8,8 +8,6 @@ const app = express();
 const port = process.env.PORT || 8080;
 const frontendUrl = process.env.FRONTEND_URL || 'https://golf-getaways.vercel.app';
 
-console.log(`Starting server with frontend URL: ${frontendUrl}`);
-
 // CORS configuration
 app.use(cors({
   origin: frontendUrl,
@@ -27,7 +25,6 @@ app.use((req, res, next) => {
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  console.log('Received health check request');
   res.status(200).send('OK');
 });
 
@@ -121,11 +118,7 @@ app.post('/api/search', (req, res) => {
   res.json(filteredCourses);
 });
 
-app.get('/', (req, res) => {
-  console.log('Received request on root path');
-  res.send('Golf Getaways API is running');
-});
-
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  console.log(`Frontend URL set to ${frontendUrl}`);
 });
