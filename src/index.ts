@@ -7,7 +7,13 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: process.env.FRONTEND_URL || 'https://golf-getaways.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }
+));
 app.use(express.json());
 
 // Mock dataset (move this to a separate file later)
