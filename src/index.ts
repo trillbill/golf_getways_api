@@ -8,6 +8,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 const frontendUrl = process.env.FRONTEND_URL || 'https://golf-getaways.vercel.app';
 
+// Add this near the top of your file, after setting up your app
+app.get('/', (req, res) => {
+  res.status(200).send('Golf Getaways API is running');
+});
+
 // CORS configuration
 app.use(cors({
   origin: frontendUrl,
