@@ -6,7 +6,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 8080;
-const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+const frontendUrl = process.env.FRONTEND_URL || 'https://golf-getaways.vercel.app';
 
 app.use(cors(
   {
