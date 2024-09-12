@@ -8,14 +8,25 @@ const app = express();
 const port = process.env.PORT || 8080;
 const frontendUrl = process.env.FRONTEND_URL || 'https://golf-getaways.vercel.app';
 
-app.use(cors(
-  {
-    origin: frontendUrl,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  }
-));
+// CORS configuration
+app.use(cors({
+  origin: frontendUrl,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
+
+// Logging middleware
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
+  next();
+});
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
 
 // Mock dataset (move this to a separate file later)
 const golfCourses = [
@@ -92,19 +103,22 @@ const golfCourses = [
 ];
 
 app.post('/api/search', (req, res) => {
+  console.log('Received search request:', req.body);
   const { maxPrice, partySize, location } = req.body;
 
   const filteredCourses = golfCourses.filter(course => {
     const priceMatch = course.price <= maxPrice;
-    const partySizeMatch = partySize === 'any' || course.partySize === partySize;
+    const partySizeMatch = partySize === 'any' || course.partySize === parseInt(partySize);
     const locationMatch = location === 'anywhere' || course.location.toLowerCase().includes(location.toLowerCase());
 
     return priceMatch && partySizeMatch && locationMatch;
   });
 
+  console.log(`Found ${filteredCourses.length} matching courses`);
   res.json(filteredCourses);
 });
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
+  console.log(`Frontend URL set to ${frontendUrl}`);
 });
