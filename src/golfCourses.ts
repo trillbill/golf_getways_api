@@ -1,7 +1,17 @@
 interface Course {
   name: string;
   par: number;
-  length: number; // in yards
+  length: number;
+  rating: number;
+  slope: number;
+  holes: number;
+}
+
+interface Review {
+  name: string;
+  date: string;
+  rating: number;
+  review: string;
 }
 
 export interface GolfCourse {
@@ -18,8 +28,7 @@ export interface GolfCourse {
   perks: string[];
   courses: Course[];
   userRating: number;
-  reviews: number;
-  mealsIncluded: string[];
+  reviews: Review[];
 }
 
 export const golfCourses: GolfCourse[] = [
@@ -29,19 +38,19 @@ export const golfCourses: GolfCourse[] = [
     location: "North Carolina",
     price: 352,
     partySize: 4,
-    description: "Experience royal treatment with 3 rounds on two championship courses, including the Rees Jones-designed Talamore. Enjoy luxurious villa accommodation and stunning Sandhills scenery.",
+    description: "Experience royal treatment with 3 rounds on 3 courses, including the Rees Jones-designed Talamore. Enjoy luxurious villa accommodation and stunning Sandhills scenery.",
     website: "https://www.talamoregolfresort.com/packages/royal-golf-package/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2016/09/Hole-9-site-666x499.jpg",
     numberOfRounds: 3,
     numberOfNights: 2,
-    perks: ["Free breakfast", "Golf cart included"],
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Tot Hill Farm", par: 72, length: 6614, rating: 72.1, slope: 144, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 2,
@@ -54,14 +63,17 @@ export const golfCourses: GolfCourse[] = [
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2021/10/mid_south_slider2-661x496.jpg",
     numberOfRounds: 3,
     numberOfNights: 2,
-    perks: ["Free breakfast", "Golf cart included"],
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "The New Course at Talamore", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Legacy", par: 72, length: 7019, rating: 73.2, slope: 132, holes: 18 },
+      { name: "Longleaf Golf and Family Club", par: 72, length: 6709, rating: 72.4, slope: 132, holes: 18 },
+      { name: "Carolina Trace Creek", par: 72, length: 6792, rating: 73.2, slope: 131, holes: 18 },
+      { name: "Hyland", par: 72, length: 6823, rating: 72.1, slope: 141, holes: 18 },
+      { name: "7 Lakes", par: 72, length: 6869, rating: 74.1, slope: 142, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 3,
@@ -72,16 +84,17 @@ export const golfCourses: GolfCourse[] = [
     description: "Indulge in a premium golfing experience with 3 nights in a luxurious lodge and 3 rounds on top-rated courses. Enjoy the newly redesigned Talamore course and the challenging Mid South Club.",
     website: "https://www.talamoregolfresort.com/packages/midland-road-masters-package/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2019/10/Mid-South9b-800x510-1-680x510.jpg",
-    numberOfRounds: 3,
+    numberOfRounds: 4,
     numberOfNights: 3,
-    perks: ["Free breakfast", "Golf cart included"],
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "The New Course at Talamore", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Mid Pines", par: 72, length: 6723, rating: 71, slope: 126, holes: 18 },
+      { name: "Pine Needles", par: 71, length: 7015, rating: 73.5, slope: 135, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 4,
@@ -92,16 +105,17 @@ export const golfCourses: GolfCourse[] = [
     description: "Perfect for groups, this package offers 3 rounds on premier courses and spacious cottage accommodation. Enjoy the camaraderie of group golf while experiencing the best of Pinehurst area courses.",
     website: "https://www.talamoregolfresort.com/packages/midland-road-masters-at-our-golf-cottage/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2021/10/Mid-South-Club-Hole-17-674x506.png",
-    numberOfRounds: 3,
-    numberOfNights: 2,
-    perks: ["Free breakfast", "Golf cart included"],
+    numberOfRounds: 4,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "The New Course at Talamore", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Mid Pines", par: 72, length: 6723, rating: 71, slope: 126, holes: 18 },
+      { name: "Pine Needles", par: 71, length: 7015, rating: 73.5, slope: 135, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 5,
@@ -113,15 +127,14 @@ export const golfCourses: GolfCourse[] = [
     website: "https://www.talamoregolfresort.com/packages/signature-package-at-our-golf-cottage/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2019/10/IMG_0123pe-825x510-1-680x510.jpg",
     numberOfRounds: 3,
-    numberOfNights: 3,
-    perks: ["Free breakfast", "Golf cart included"],
+    numberOfNights: 2,
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 6,
@@ -133,15 +146,14 @@ export const golfCourses: GolfCourse[] = [
     website: "https://www.talamoregolfresort.com/packages/signature-golf-package/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2019/10/MidSouth2b-800x510-1-680x510.jpg",
     numberOfRounds: 3,
-    numberOfNights: 3,
-    perks: ["Free breakfast", "Golf cart included"],
+    numberOfNights: 2,
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   },
   {
     id: 7,
@@ -149,18 +161,18 @@ export const golfCourses: GolfCourse[] = [
     location: "North Carolina",
     price: 301,
     partySize: 4,
-    description: "3 nights in a luxurious 2-bedroom / 2-bath Mid South Lodge",
+    description: "Play like a legend with 3 nights and 3 rounds on iconic Sandhills courses. Experience the newly renovated Talamore with its unique sod-wall bunkers and the challenging Mid South Club.",
     website: "https://www.talamoregolfresort.com/packages/legends-golf-package/",
     imageUrl: "https://www.talamoregolfresort.com/wp-content/uploads/2022/05/EcoBunkers-Sod-Wall-1236x927.jpg",
     numberOfRounds: 3,
-    numberOfNights: 3,
-    perks: ["Free breakfast", "Golf cart included"],
+    numberOfNights: 2,
+    perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
-      { name: "Talamore Golf Club", par: 72, length: 6840 },
-      { name: "Mid South Club", par: 71, length: 6649 }
+      { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Legacy", par: 72, length: 7019, rating: 73.2, slope: 132, holes: 18 }
     ],
-    userRating: 4.5,
-    reviews: 120,
-    mealsIncluded: ["Breakfast"]
+    userRating: 0,
+    reviews: []
   }
 ];
