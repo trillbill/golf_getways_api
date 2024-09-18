@@ -174,5 +174,43 @@ export const golfCourses: GolfCourse[] = [
     ],
     userRating: 0,
     reviews: []
-  }
+  },
+  {
+    id: 8,
+    name: "Grandover Resort - Golf Package",
+    location: "North Carolina",
+    price: 539,
+    partySize: 2,
+    description: "Experience world-class golf at Grandover Resort in Greensboro, North Carolina. This premier golf destination offers two 18-hole championship courses designed by David Graham and Gary Panks.",
+    website: "https://grandoverresort.com/golf/",
+    imageUrl: "https://golf-pass.brightspotcdn.com/a4/78/e3d1da569c2783e822d4b3cb6501/57954.jpg",
+    numberOfRounds: 2,
+    numberOfNights: 1,
+    perks: ["Free breakfast"],
+    courses: [
+      { name: "East Course", par: 72, length: 7100, rating: 74.3, slope: 140, holes: 18 },
+      { name: "West Course", par: 72, length: 6800, rating: 72.5, slope: 136, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 9,
+    name: "Dunes West Golf Club Package",
+    location: "South Carolina",
+    price: 459,
+    partySize: 4,
+    description: "The Charming Charleston Package from Troon Golf Vacations offers a perfect blend of golf and southern hospitality, featuring a 3-night stay at the Courtyard - Charleston Mt. Pleasant and three rounds of golf across two prestigious courses.",
+    website: "https://www.duneswestgolfclub.com/-golf-vacations",
+    imageUrl: "https://ygt-res.cloudinary.com/image/upload/c_fit,h_1280,q_80,w_1920/v1614089169/Venues/Dunes%20West%20Golf%20and%20River%20Club/dunes-west-golf-river-club-1.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: [],
+    courses: [
+      { name: "Dunes West Golf and River Club", par: 72, length: 6871, rating: 73, slope: 134 , holes: 18 },
+      { name: "RiverTowne Country Club", par: 72, length: 7133, rating: 75, slope: 145, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
 ];
