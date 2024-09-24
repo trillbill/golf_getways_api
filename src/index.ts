@@ -36,16 +36,14 @@ app.get('/health', (req, res) => {
 
 app.post('/api/search', (req, res) => {
   try {
-    console.log(frontendUrl)
-    console.log('Received search request:', req.body);
-    const { maxPrice, partySize, location } = req.body;
+    const { maxPrice, location, partySize } = req.body;
 
     const filteredCourses = golfCourses.filter(course => {
-      const priceMatch = course.price <= maxPrice;
-      const partySizeMatch = partySize === 'any' || course.partySize === parseInt(partySize);
-      const locationMatch = location === 'anywhere' || course.location.toLowerCase().includes(location.toLowerCase());
+      const matchesLocation = !location || course.location === location;
+      const matchesMaxPrice = !maxPrice || course.price.min <= maxPrice; // Check if min price is less than or equal to maxPrice
+      const matchesPartySize = partySize === 'any' || course.partySize === parseInt(partySize);
 
-      return priceMatch && partySizeMatch && locationMatch;
+      return matchesLocation && matchesMaxPrice && matchesPartySize;
     });
 
     console.log(`Found ${filteredCourses.length} matching courses`);
