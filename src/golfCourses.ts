@@ -46,7 +46,7 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 },
       { name: "Tot Hill Farm", par: 72, length: 6614, rating: 72.1, slope: 144, holes: 18 }
     ],
     userRating: 0,
@@ -89,8 +89,8 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "The New Course at Talamore", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
-      { name: "Mid Pines", par: 72, length: 6723, rating: 71, slope: 126, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 },
+      { name: "Mid Pines", par: 72, length: 6723, rating: 71.0, slope: 126, holes: 18 },
       { name: "Pine Needles", par: 71, length: 7015, rating: 73.5, slope: 135, holes: 18 }
     ],
     userRating: 0,
@@ -110,8 +110,8 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "The New Course at Talamore", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
-      { name: "Mid Pines", par: 72, length: 6723, rating: 71, slope: 126, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 },
+      { name: "Mid Pines", par: 72, length: 6723, rating: 71.0, slope: 126, holes: 18 },
       { name: "Pine Needles", par: 71, length: 7015, rating: 73.5, slope: 135, holes: 18 }
     ],
     userRating: 0,
@@ -131,7 +131,7 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 }
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 }
     ],
     userRating: 0,
     reviews: []
@@ -150,7 +150,7 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 }
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 }
     ],
     userRating: 0,
     reviews: []
@@ -169,7 +169,7 @@ export const golfCourses: GolfCourse[] = [
     perks: ["Free breakfast", "Golf cart included", "Green fees included"],
     courses: [
       { name: "Talamore Golf Club", par: 71, length: 6840, rating: 72.9, slope: 142, holes: 18 },
-      { name: "Mid South Club", par: 72, length: 6577, rating: 73, slope: 135, holes: 18 },
+      { name: "Mid South Club", par: 72, length: 6577, rating: 73.0, slope: 135, holes: 18 },
       { name: "Legacy", par: 72, length: 7019, rating: 73.2, slope: 132, holes: 18 }
     ],
     userRating: 0,
@@ -207,8 +207,8 @@ export const golfCourses: GolfCourse[] = [
     numberOfNights: 3,
     perks: [],
     courses: [
-      { name: "Dunes West Golf and River Club", par: 72, length: 6871, rating: 73, slope: 134, holes: 18 },
-      { name: "RiverTowne Country Club", par: 72, length: 7133, rating: 75, slope: 145, holes: 18 }
+      { name: "Dunes West Golf and River Club", par: 72, length: 6871, rating: 73.0, slope: 134, holes: 18 },
+      { name: "RiverTowne Country Club", par: 72, length: 7133, rating: 75.0, slope: 145, holes: 18 }
     ],
     userRating: 0,
     reviews: []
@@ -283,7 +283,7 @@ export const golfCourses: GolfCourse[] = [
     numberOfNights: 3,
     perks: ["15% pro shop discount", "Complimentary range balls", "Unlimited rounds", "Golf cart included"],
     courses: [
-      { name: "Leatherstocking Course", par: 72, length: 6401, rating: 71, slope: 133, holes: 18 }
+      { name: "Leatherstocking Course", par: 72, length: 6401, rating: 71.0, slope: 133, holes: 18 }
     ],
     userRating: 0,
     reviews: []
@@ -304,7 +304,7 @@ export const golfCourses: GolfCourse[] = [
       { name: "Atunyote", par: 72, length: 7315, rating: 75.8, slope: 143, holes: 18 },
       { name: "Shenendoah", par: 72, length: 7013, rating: 74.2, slope: 140, holes: 18 },
       { name: "Kaluhyat", par: 72, length: 7105, rating: 75.2, slope: 145, holes: 18 },
-      { name: "Sandstone Hollow", par: 27, length: 1482, rating: 70, slope: 110, holes: 9 },
+      { name: "Sandstone Hollow", par: 27, length: 1482, rating: 70.0, slope: 110, holes: 9 },
       { name: "Atunyote", par: 36, length: 3388, rating: 34.8, slope: 102, holes: 9 }
     ],
     userRating: 0,
@@ -324,7 +324,7 @@ export const golfCourses: GolfCourse[] = [
     perks: ["$75 replay rates"],
     courses: [
       { name: "Harbour Town Golf Links", par: 71, length: 7110, rating: 75.6, slope: 148, holes: 18 },
-      { name: "Heron Point by Pete Dye", par: 72, length: 7035, rating: 74, slope: 140, holes: 18 },
+      { name: "Heron Point by Pete Dye", par: 72, length: 7035, rating: 74.0, slope: 140, holes: 18 },
       { name: "Atlantic Dunes by Davis Love III", par: 72, length: 7010, rating: 74.3, slope: 143, holes: 18 }
     ],
     userRating: 0,
@@ -355,7 +355,7 @@ export const golfCourses: GolfCourse[] = [
     location: "Arizona",
     price: { min: 385, max: 797 },
     partySize: 2,
-    description: "Discover Florida's hidden gem with Mission Inn Resort & Club's stay-and-play package, offering charming accommodations and exceptional golf on two picturesque courses nestled in the rolling hills of Central Florida.",
+    description: "The Stay & Play Golf Package at Ventana Canyon offers a luxurious desert getaway featuring two Tom Fazio 18-hole championship courses, spacious guest suites with breathtaking views, complimentary breakfast, and a $50 resort credit for stays of three nights or longer.",
     website: "https://www.ventanacanyonclub.com/offers/stay-play-golf-package/",
     imageUrl: "https://www.ventanacanyonclub.com/wp-content/uploads/2020/11/MG_7296.jpg",
     numberOfRounds: 2,
@@ -364,6 +364,174 @@ export const golfCourses: GolfCourse[] = [
     courses: [
       { name: "Mountain Course", par: 72, length: 6898, rating: 72.8, slope: 143, holes: 18 },
       { name: "Canyon Course", par: 72, length: 6836, rating: 71.7, slope: 137, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 18,
+    name: "Palmetto Dunes Oceanfront Resort",
+    location: "South Carolina",
+    price: { min: 600, max: 900 },
+    partySize: 4,
+    description: "The Golf Stay and Play Package at Palmetto Dunes offers customizable accommodations on Hilton Head Island, including four days and three nights in a two-bedroom villa, along with two or three rounds of golf on your choice of three championship courses, and additional perks like dining discounts and a Toptracer experience.",
+    website: "https://www.palmettodunes.com/golf/golf-rates-and-packages",
+    imageUrl: "https://www.palmettodunes.com/img/asset/bWFpbi9ibG9nL2dvbGYyaGVhZGVyLmpwZWc=?w=370&h=240&fit=crop&dpr=2&s=59c63369bcf15206e005f0e395ee57e2",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Golf cart included", "Free tennis & pickleball", "Toptracer experience"],
+    courses: [
+      { name: "Robert Trent Jones Course", par: 72, length: 7005, rating: 74.8, slope: 141, holes: 18 },
+      { name: "George Fazio Course", par: 70, length: 6873, rating: 74.2, slope: 145, holes: 18 },
+      { name: "Arthur Hills Course", par: 72, length: 6907, rating: 74.3, slope: 147, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 19,
+    name: "Ocean Annie's North Myrtle Beach Package",
+    location: "South Carolina",
+    price: { min: 245, max: 345 },
+    partySize: 2,
+    description: "The North Myrtle Beach Package at Ocean Annie's Resorts includes three nights of accommodations, three rounds of golf at Beachwood, Eagle Nest, and Azalea Sands, along with daily breakfast.",
+    website: "https://oceananniesresorts.com/elite-golf-package/north-myrtle-beach-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2022/10/Azalea-Sands-Golf-Course.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included"],
+    courses: [
+      { name: "Beachwood", par: 72, length: 6820, rating: 71.7, slope: 129, holes: 18 },
+      { name: "Eagle Nest", par: 72, length: 8168, rating: 78.1, slope: 143, holes: 18 },
+      { name: "Azalea Sands", par: 72, length: 6444, rating: 71.0, slope: 126, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 20,
+    name: "Ocean Annie's Legend's Package",
+    location: "South Carolina",
+    price: { min: 325, max: 425 },
+    partySize: 2,
+    description: "The Legends Package at Ocean Annie's Resorts invites you to indulge in a thrilling golf getaway with three nights of oceanview accommodations, three rounds of golf at top courses, and daily breakfast, all while enjoying the vibrant atmosphere of Myrtle Beach and its stunning coastline.",
+    website: "https://oceananniesresorts.com/elite-golf-package/legends-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2022/10/Legends-Golf-Course.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included", "2 free beers per round"],
+    courses: [
+      { name: "Legends Heathland", par: 71, length: 6800, rating: 72.8, slope: 131, holes: 18 },
+      { name: "Moorland", par: 72, length: 6755, rating: 74.0, slope: 140, holes: 18 },
+      { name: "Parkland", par: 72, length: 7108, rating: 74.9, slope: 136, holes: 18 },
+      { name: "Oyster Bay", par: 70, length: 6685, rating: 72.1, slope: 136, holes: 18 },
+      { name: "Heritage", par: 71, length: 7118, rating: 74.9, slope: 138, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 21,
+    name: "Ocean Annie's Big Cats Package",
+    location: "South Carolina",
+    price: { min: 300, max: 400 },
+    partySize: 2,
+    description: "The Big Cats Package at Ocean Annie's Resorts offers an exhilarating golf experience with three nights of oceanview accommodations, three rounds of golf at premier courses including Leopard’s Chase, Tiger’s Eye, Lion’s Paw, and Panther’s Run, along with daily breakfast and access to resort amenities.",
+    website: "https://oceananniesresorts.com/elite-golf-package/big-cats-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2022/10/Big-Cats-Package-Image.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included"],
+    courses: [
+      { name: "Leopard's Chase", par: 72, length: 7155, rating: 74.3, slope: 140, holes: 18 },
+      { name: "Tiger's Eye", par: 72, length: 7014, rating: 73.3, slope: 141, holes: 18 },
+      { name: "Lion's Paw", par: 72, length: 7003, rating: 74.0, slope: 132, holes: 18 },
+      { name: "Panther's Run", par: 72, length: 7089, rating: 73.7, slope: 140, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 22,
+    name: "Ocean Annie's Sea Trail Package",
+    location: "South Carolina",
+    price: { min: 260, max: 360 },
+    partySize: 2,
+    description: "The Sea Trail Triple Course Package at Ocean Annie's Resorts offers an exciting golf getaway with three nights of oceanview accommodations, three rounds of golf on the renowned Sea Trail courses—Jones, Byrd, and Maples—along with daily breakfast and a complimentary afternoon replay on any Sea Trail course.",
+    website: "https://oceananniesresorts.com/elite-golf-package/sea-trail-triple-course-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2021/03/Sea-Trail-Golf-Course-e1614699791397.png",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included"],
+    courses: [
+      { name: "Sea Trail Jones", par: 72, length: 6754, rating: 73.2, slope: 138, holes: 18 },
+      { name: "Byrd", par: 72, length: 6658, rating: 72.6, slope: 129, holes: 18 },
+      { name: "Maples", par: 72, length: 6384, rating: 72.0, slope: 138, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 23,
+    name: "Ocean Annie's Barefoot Package",
+    location: "South Carolina",
+    price: { min: 414, max: 514 },
+    partySize: 2,
+    description: "The Barefoot Golf Package at Ocean Annie's Resorts includes three nights of accommodations, three rounds of golf with cart at your choice of Barefoot courses—Dye, Love, Fazio, or Norman—and breakfast each morning, with a bonus fourth round free after 1 PM.",
+    website: "https://oceananniesresorts.com/elite-golf-package/barefoot-golf-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2019/09/Barefoot-Package.jpg",
+    numberOfRounds: 4,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included", "Free 4th round"],
+    courses: [
+      { name: "Barefoot Dye", par: 72, length: 7343, rating: 76.0, slope: 143, holes: 18 },
+      { name: "Love", par: 72, length: 7047, rating: 74.9, slope: 141, holes: 18 },
+      { name: "Fazio", par: 71, length: 6834, rating: 73.3, slope: 144, holes: 18 },
+      { name: "Norman", par: 72, length: 7035, rating: 74.2, slope: 141, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 24,
+    name: "Ocean Annie's Coastal Escape Package",
+    location: "South Carolina",
+    price: { min: 343, max: 443 },
+    partySize: 2,
+    description: "The Coastal Escape Golf Package at Ocean Annie's Resorts offers a delightful getaway with three nights of oceanview accommodations, three rounds of golf at your choice of premier courses—including Tidewater, Arcadian Shores, and Beachwood—along with daily breakfast and access to resort amenities.",
+    website: "https://oceananniesresorts.com/elite-golf-package/coastal-escape-golf-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2019/09/East-Coast-Package-CTA.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included"],
+    courses: [
+      { name: "Tidewater", par: 72, length: 7044, rating: 74.3, slope: 144, holes: 18 },
+      { name: "Arcadian Shores", par: 72, length: 6857, rating: 72.9, slope: 138, holes: 18 },
+      { name: "Beachwood", par: 72, length: 6820, rating: 71.7, slope: 129, holes: 18 },
+      { name: "Eagle Nest", par: 72, length: 8168, rating: 78.1, slope: 143, holes: 18 },
+      { name: "Azalea Sands", par: 72, length: 6444, rating: 71.0, slope: 126, holes: 18 },
+      { name: "Pearl", par: 72, length: 7006, rating: 73.2, slope: 132, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 25,
+    name: "Ocean Annie's Myrtle Beach Elite Package",
+    location: "South Carolina",
+    price: { min: 323, max: 423 },
+    partySize: 2,
+    description: "The Coastal Escape Golf Package at Ocean Annie's Resorts offers a delightful getaway with three nights of oceanview accommodations, three rounds of golf at your choice of premier courses—including Tidewater, Arcadian Shores, and Beachwood—along with daily breakfast and access to resort amenities.",
+    website: "https://oceananniesresorts.com/elite-golf-package/myrtle-beach-elite-package/",
+    imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2019/09/Elite-Package-CTA-600x400-1.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 3,
+    perks: ["Free breakfast", "Golf cart included"],
+    courses: [
+      { name: "Arcadian Shores", par: 72, length: 6857, rating: 72.9, slope: 138, holes: 18 },
+      { name: "Tidewater", par: 72, length: 7044, rating: 74.3, slope: 144, holes: 18 },
+      { name: "Arrowhead", par: 72, length: 6697, rating: 72.1, slope: 139, holes: 18 },
+      { name: "Prestwick", par: 72, length: 7086, rating: 74.7, slope: 138, holes: 18 }
     ],
     userRating: 0,
     reviews: []
