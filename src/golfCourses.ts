@@ -521,7 +521,7 @@ export const golfCourses: GolfCourse[] = [
     location: "South Carolina",
     price: { min: 323, max: 423 },
     partySize: 2,
-    description: "The Coastal Escape Golf Package at Ocean Annie's Resorts offers a delightful getaway with three nights of oceanview accommodations, three rounds of golf at your choice of premier courses—including Tidewater, Arcadian Shores, and Beachwood—along with daily breakfast and access to resort amenities.",
+    description: "Experience the ultimate golf getaway with three nights of oceanview accommodations and rounds at premier courses, all while enjoying the vibrant atmosphere of Myrtle Beach.",
     website: "https://oceananniesresorts.com/elite-golf-package/myrtle-beach-elite-package/",
     imageUrl: "https://oceananniesresorts.com/wp-content/uploads/2019/09/Elite-Package-CTA-600x400-1.jpg",
     numberOfRounds: 3,
@@ -532,6 +532,101 @@ export const golfCourses: GolfCourse[] = [
       { name: "Tidewater", par: 72, length: 7044, rating: 74.3, slope: 144, holes: 18 },
       { name: "Arrowhead", par: 72, length: 6697, rating: 72.1, slope: 139, holes: 18 },
       { name: "Prestwick", par: 72, length: 7086, rating: 74.7, slope: 138, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 26,
+    name: "La Quinta Resort Package",
+    location: "California",
+    price: { min: 945, max: 1140 },
+    partySize: 2,
+    description: " Elevate your golf experience with luxurious accommodations and daily rounds on legendary courses designed by golf icons, all set against the stunning backdrop of the California desert.",
+    website: "https://www.laquintaresort.com/rooms/special-offers/stay-and-play/",
+    imageUrl: "https://laquintaresort.com/wp-content/uploads/2017/02/Stadium-Course_311x310.jpg",
+    numberOfRounds: 2,
+    numberOfNights: 3,
+    perks: ["Golf cart included"],
+    courses: [
+      { name: "The Stadium Course at PGA WEST", par: 72, length: 7300, rating: 75.8, slope: 148, holes: 18 },
+      { name: "Mountain Course at La Quinta Resort", par: 72, length: 6666, rating: 72.9, slope: 135, holes: 18 },
+      { name: "Greg Norman Course at PGA WEST", par: 72, length: 7156, rating: 75.1, slope: 139, holes: 18 },
+      { name: "Nicklaus Tournament Course at PGA WEST", par: 72, length: 7204, rating: 75.3, slope: 143, holes: 18 },
+      { name: "Dunes Course at La Quinta Resort", par: 72, length: 6578, rating: 72.4, slope: 134, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 27,
+    name: "Hammock Beach Ocean Course Package",
+    location: "Florida",
+    price: { min: 568, max: 668 },
+    partySize: 4,
+    description: "Indulge in a luxurious coastal retreat with exclusive golf packages that offer breathtaking oceanfront courses and top-notch amenities for an unforgettable golfing experience.",
+    website: "https://www.hammockbeach.com/palm-coast-hotel-offers/golf-packages-1/",
+    imageUrl: "https://www.hammockbeach.com/site/assets/files/3660/hotel.jpg",
+    numberOfRounds: 2,
+    numberOfNights: 2,
+    perks: ["$25 breakfast credit"],
+    courses: [
+      { name: "The Ocean Course", par: 72, length: 7201, rating: 77.0, slope: 147, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 28,
+    name: "Hammock Beach Just Golf Package",
+    location: "Florida",
+    price: { min: 460, max: 560 },
+    partySize: 4,
+    description: "Indulge in a luxurious coastal retreat with exclusive golf packages that offer breathtaking oceanfront courses and top-notch amenities for an unforgettable golfing experience.",
+    website: "https://www.hammockbeach.com/palm-coast-hotel-offers/golf-packages-1/",
+    imageUrl: "https://www.hammockbeach.com/site/assets/files/3656/dji_0260.2048x1152-srcset.jpg",
+    numberOfRounds: 3,
+    numberOfNights: 2,
+    perks: ["10% off accommodations"],
+    courses: [
+      { name: "The Ocean Course", par: 72, length: 7201, rating: 77.0, slope: 147, holes: 18 },
+      { name: "The Conservatory Course", par: 72, length: 7776, rating: 78.2, slope: 150, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 29,
+    name: "Hammock Beach Conservatory Course Package",
+    location: "Florida",
+    price: { min: 446, max: 546 },
+    partySize: 4,
+    description: "Indulge in a luxurious coastal retreat with exclusive golf packages that offer breathtaking oceanfront courses and top-notch amenities for an unforgettable golfing experience.",
+    website: "https://www.hammockbeach.com/palm-coast-hotel-offers/golf-packages-1/",
+    imageUrl: "https://www.hammockbeach.com/site/assets/files/3662/hab-con-9th_hole.2048x1361-srcset.jpg",
+    numberOfRounds: 2,
+    numberOfNights: 2,
+    perks: ["$25 breakfast credit", "10% off accommodations"],
+    courses: [
+      { name: "The Conservatory Course", par: 72, length: 7776, rating: 78.2, slope: 150, holes: 18 }
+    ],
+    userRating: 0,
+    reviews: []
+  },
+  {
+    id: 30,
+    name: "Hammock Beach Mid Week Package",
+    location: "Florida",
+    price: { min: 428, max: 528 },
+    partySize: 4,
+    description: "Indulge in a luxurious coastal retreat with exclusive golf packages that offer breathtaking oceanfront courses and top-notch amenities for an unforgettable golfing experience.",
+    website: "https://www.hammockbeach.com/palm-coast-hotel-offers/golf-packages-1/",
+    imageUrl: "https://www.hammockbeach.com/site/assets/files/3658/golf_midweek.webp",
+    numberOfRounds: 2,
+    numberOfNights: 2,
+    perks: ["25% off accommodations"],
+    courses: [
+      { name: "The Conservatory Course", par: 72, length: 7776, rating: 78.2, slope: 150, holes: 18 }
     ],
     userRating: 0,
     reviews: []
