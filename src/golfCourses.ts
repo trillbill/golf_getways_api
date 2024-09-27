@@ -544,7 +544,7 @@ export const golfCourses: GolfCourse[] = [
     partySize: 2,
     description: " Elevate your golf experience with luxurious accommodations and daily rounds on legendary courses designed by golf icons, all set against the stunning backdrop of the California desert.",
     website: "https://www.laquintaresort.com/rooms/special-offers/stay-and-play/",
-    imageUrl: "https://laquintaresort.com/wp-content/uploads/2017/02/Stadium-Course_311x310.jpg",
+    imageUrl: "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill,w_540,h_485,q_80,f_auto,g_auto/Imagery/Property%20Photography/MultiBrand/P/PSPLQQQ/mountain_golfcourse.jpg",
     numberOfRounds: 2,
     numberOfNights: 3,
     perks: ["Golf cart included"],
